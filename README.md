@@ -1,4 +1,4 @@
-# Recommendo
+# Reccomendo
 
 ## TV Shows Recommendation App
 
