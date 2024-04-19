@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:longClickable="true"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageSinglec"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/imageSingle"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/rand"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/ShowBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/rand"
+            android:src="@drawable/selected_icon" />
+
+        <ImageView
+            android:id="@+id/DelBox"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/rand"
+            android:visibility="gone"
+            app:srcCompat="@drawable/delshow" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/circle_load"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:lottie_loop="true"
+            app:lottie_speed="0.75"
+            app:lottie_repeatMode="reverse"
+            app:lottie_rawRes="@raw/circle_load_d">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <at.blogc.android.views.ExpandableTextView
+        android:id="@+id/nameSingle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSinglec"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/sfprobold"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="48dp" android:width="48dp" />
+            <solid android:color="@color/menuicon"/>
+            <stroke android:width="4dp" android:color="@color/backColor"/>
+
+        </shape>
+
+    </item>
+
+</selector>

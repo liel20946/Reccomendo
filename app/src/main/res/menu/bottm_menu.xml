@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="@string/home"
+        android:icon="@drawable/ic_baseline_personal_video_24" />
+
+    <item
+        android:title="@string/discover"
+        android:icon="@drawable/ic_baseline_whatshot_24" />
+
+    <item
+        android:title="@string/MyS"
+        android:icon="@drawable/ic_baseline_check_circle_outline_24" />
+
+    <item
+        android:title="@string/statistic"
+        android:icon="@drawable/ic_baseline_insert_chart_outlined_24" />
+
+    <item
+        android:title="@string/settings"
+        android:icon="@drawable/ic_baseline_settings_24" />
+
+</menu>

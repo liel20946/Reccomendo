@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#907CB9</color>
+    <color name="colorPrimaryDark">#121212</color>
+    <color name="colorAccent">#FF9F4B</color>
+    <color name="Text">#ffff</color>
+    <color name="tans">#CCFFFFFF</color>
+    <color name="tansd">#CC000000</color>
+    <color name="tansinfo">#CCFFFFFF</color>
+    <color name="tansinfod">#CC000000</color>
+    <color name="box">#e8ebec</color>
+
+    <color name="grey">#CACACA</color>
+    <color name="textdark">#757575</color>
+    <color name="backColor">#19161D</color>
+    <color name="menuicon">#343138</color>
+    <color name="actionbar">#231F2D</color>
+    <color name="lightBack">#EBEBEB</color>
+    <color name="settingsBackIcon">#9E9E9E</color>
+
+    <color name="likeblue">#4891F1</color>
+    <color name="dissred">#FF4351</color>
+    <color name="tutorial">#312B39</color>
+
+    <array name="tab_colors">
+        <item name="tab_1">#343138</item>
+        <item name="tab_2">#312B39</item>
+        <item name="tab_3">#231F2D</item>
+        <item name="tab_4">#19161D</item>
+        <item name="tab_5">#5B4E77</item>
+    </array>
+
+
+
+
+
+</resources>
+

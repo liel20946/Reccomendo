@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.AddWatched" />
+        <activity android:name=".InBetweenActivities.About" />
+        <activity android:name=".Activities.Tutorial" />
+        <activity
+            android:exported="true"
+            android:name=".MainActivity"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".Activities.InfoPage"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/intro" />
+        <activity
+            android:name=".InBetweenActivities.AllDoneNow"
+            android:theme="@style/intro" />
+        <activity
+            android:name=".InBetweenActivities.NoMore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.FinalPage"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".InBetweenActivities.Ops"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"/>
+        <activity
+            android:name=".InBetweenActivities.NoConnection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.IntroActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/intro" />
+        <activity
+            android:name=".Activities.AlreadyLiked"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
+        <activity
+            android:name=".Activities.Register"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

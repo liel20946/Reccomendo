@@ -1,0 +1,81 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Preferences"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            app:icon="@drawable/ic_baseline_movie_24"
+            app:entries="@array/genre_entries"
+            app:entryValues="@array/genre_entries"
+            app:key="genere"
+            app:title="Genre"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:icon="@drawable/ic_baseline_timer_24"
+            app:entries="@array/epiLen_values"
+            app:entryValues="@array/epiLen_values"
+            app:key="epilen"
+            app:title="Episode Length"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Appearance"
+        app:iconSpaceReserved="false">
+
+        <ListPreference
+            app:defaultValue="Dark"
+            app:entries="@array/theme_values"
+            app:entryValues="@array/theme_values"
+            app:key="theme"
+            app:title="Theme"
+            app:icon="@drawable/ic_baseline_invert_colors_24_d"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Actions"
+        app:iconSpaceReserved="false">
+
+
+        <Preference app:title="Rate Us"
+            app:key="rate"
+            app:icon="@drawable/ic_baseline_star_24_d"
+            app:summary="Tell Us If You Enjoy The App!">
+        </Preference>
+
+        <Preference app:title="Clear Cache"
+            app:key="clearC"
+            app:icon="@drawable/ic_baseline_delete_forever_24_d"
+            app:summary="Go To Storage Setting To Clear The App Data!">
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Others"
+        app:iconSpaceReserved="false">
+
+        <Preference app:title="Version"
+            app:key="ver"
+            app:icon="@drawable/ic_baseline_code_24_d"
+            app:summary="@string/appver">
+        </Preference>
+
+        <Preference app:title="Bug Report"
+            app:key="bug"
+            app:icon="@drawable/ic_baseline_bug_report_24_d"
+            app:summary="Help Us Find Issues And Improve The App">
+        </Preference>
+
+
+    <Preference app:title="About"
+        app:key="about"
+        app:icon="@drawable/ic_baseline_info_24_d"
+        app:summary="Get To Know Us">
+    </Preference>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

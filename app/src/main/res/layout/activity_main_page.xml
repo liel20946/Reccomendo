@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/MainPageLinarl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/maincardp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:orientation="vertical"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/backroundimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:contentDescription="@string/rand"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <ImageView
+                        android:id="@+id/imageViewclear"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:contentDescription="@string/rand"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/tansback_d" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/imageSinglec"
+                        android:layout_width="115dp"
+                        android:layout_height="172.5dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:foregroundGravity="center"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/backroundimg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/releaseGen"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <ImageView
+                            android:id="@+id/imageReco"
+                            android:layout_width="115dp"
+                            android:layout_height="172.5dp"
+                            android:contentDescription="@string/rand" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/RecoName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/sfprobold"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:text="@string/name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/backroundimg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <at.blogc.android.views.ExpandableTextView
+                        android:id="@+id/RecoDesc"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="fill"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="16dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/sfpro"
+                        android:gravity="start"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="6"
+                        android:text="@string/desc"
+                        android:textColor="@color/Text"
+                        android:textSize="16sp"
+                        app:animation_duration="750"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageSinglec"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageSinglec"
+                        app:layout_constraintTop_toBottomOf="@+id/RecoGen"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/RecoSeas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/sfpromedium"
+                        android:text="@string/seas"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/backroundimg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/imageSinglec"
+                        app:layout_constraintTop_toBottomOf="@+id/imageSinglec"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/RecoEpi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/sfpromedium"
+                        android:text="@string/episeas"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/backroundimg"
+                        app:layout_constraintEnd_toEndOf="@+id/RecoSeas"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/RecoSeas"
+                        app:layout_constraintTop_toBottomOf="@+id/RecoSeas"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/releaseGen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/sfpro"
+                        android:text="@string/date"
+                        android:textColor="@color/textdark"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/backroundimg"
+                        app:layout_constraintEnd_toEndOf="@+id/RecoName"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/RecoName"
+                        app:layout_constraintTop_toBottomOf="@+id/RecoName"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/network"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/sfpro"
+                        android:singleLine="true"
+                        android:text="@string/Net"
+                        android:textColor="@color/textdark"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/backroundimg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/releaseGen"
+                        app:layout_constraintTop_toTopOf="@+id/releaseGen"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/RecoGen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/genere_back"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/sfpro"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:padding="3dp"
+                        android:text="@string/gen"
+                        android:textColor="@color/textdark"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/backroundimg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageSinglec"
+                        app:layout_constraintTop_toTopOf="@+id/imageSinglec"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/maincardp"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/RecoRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="@string/rate"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/star"
+                    app:layout_constraintStart_toStartOf="@+id/star"
+                    app:layout_constraintTop_toBottomOf="@+id/star"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/EpisodeTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="@string/min"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/stopwatch"
+                    app:layout_constraintStart_toStartOf="@+id/stopwatch"
+                    app:layout_constraintTop_toBottomOf="@+id/stopwatch"
+                    app:layout_constraintVertical_bias="0.0">
+
+                </TextView>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/star"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/stopwatch"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:lottie_progress="1"
+                    app:lottie_rawRes="@raw/star_d"
+                    app:lottie_speed="0.5" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/stopwatch"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/star"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:lottie_progress="1"
+                    app:lottie_rawRes="@raw/stopwatch">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <TextView
+                    android:id="@+id/rate_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/rate_back"
+                    android:fontFamily="@font/sfprobold"
+                    android:gravity="center"
+                    android:text="@string/numb"
+                    android:textColor="@color/Text"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/EpisodeTime"
+                    app:layout_constraintStart_toStartOf="@+id/EpisodeTime"
+                    app:layout_constraintTop_toBottomOf="@+id/EpisodeTime"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/final_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/finalscore_back"
+                    android:fontFamily="@font/sfprobold"
+                    android:gravity="center"
+                    android:text="@string/numb"
+                    android:textColor="@color/Text"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/RecoRating"
+                    app:layout_constraintStart_toStartOf="@+id/RecoRating"
+                    app:layout_constraintTop_toBottomOf="@+id/EpisodeTime"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/popText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="@string/scorepop"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/rate_score"
+                    app:layout_constraintStart_toStartOf="@+id/rate_score"
+                    app:layout_constraintTop_toBottomOf="@+id/rate_score"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/recosText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="@string/recfinals"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/final_score"
+                    app:layout_constraintStart_toStartOf="@+id/final_score"
+                    app:layout_constraintTop_toBottomOf="@+id/rate_score"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!--
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/popcorn2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stopwatch"
+                    app:layout_constraintEnd_toStartOf="@+id/imageSinglec"
+                    app:layout_constraintHorizontal_bias="0.3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageSinglec"
+                    app:layout_constraintVertical_bias="0.62"
+                    app:lottie_progress="1"
+                    app:lottie_rawRes="@raw/popcorn"
+                    app:lottie_speed="0.5">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+                <Button
+                    android:id="@+id/expandText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="@string/expand"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/RecoDesc"
+                    app:layout_constraintVertical_bias="0.0" />
+                    -->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/full_text_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/actionbar"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/back_full_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24_d"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/fulltextview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/rand"
+            android:textColor="@color/Text"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/back_full_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/left_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tansinfo_d">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/rand"
+            app:srcCompat="@drawable/ic_baseline_block_24_card" />
+
+        <!-- Set your left overlay -->
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/right_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tansinfo_d">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/rand"
+            app:srcCompat="@drawable/ic_baseline_check_circle_24_card" />
+
+        <!-- Set your left overlay -->
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+

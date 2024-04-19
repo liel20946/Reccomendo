@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddWatched">
+
+    <com.paulrybitskyi.persistentsearchview.PersistentSearchView
+        android:id="@+id/add_watchedSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        app:cardBackgroundColor="@color/actionbar"
+        app:cardCornerRadius="8dp"
+        app:clearInputButtonDrawable="@drawable/ic_baseline_close_24"
+        app:isDismissableOnTouchOutside="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:leftButtonDrawable="@drawable/ic_baseline_arrow_back_24_d"
+        app:queryInputBarIconColor="@color/colorPrimary"
+        app:queryInputHint="@string/search"
+        app:queryInputHintColor="@color/Text"
+        app:queryInputTextColor="@color/Text" />
+
+    <GridView
+        android:id="@+id/search_grid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:layout_marginStart="8dp"
+        android:horizontalSpacing="15dp"
+        android:layout_marginEnd="8dp"
+        android:numColumns="auto_fit"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:verticalSpacing="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_watchedSearch"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
