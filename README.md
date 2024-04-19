@@ -18,7 +18,20 @@ Recommendo is an intuitive app designed to make your TV show discovery experienc
   
 - **Watched Shows List:** Keep track of the shows you've watched with a dedicated list, making it easy to revisit your favorites or discover new episodes.
   
-- **Comprehensive Show Details:** Tap on any show to access a wealth of information, including links to platforms where it's available for streaming, trailers, and more.
+- **Recommendation Feedback:** Rate recommendations with thumbs up or thumbs down to provide feedback to the app, influencing future recommendations.
+
+### Screenshots:
+
+Here are some screenshots of the app in action:
+
+<img src="https://github.com/liel20946/Reccomendo/assets/13507497/73d65116-825c-4be4-9b2a-0e37f398e2cd" alt="Screenshot_20200916-223205_Recomendo" width="200px">
+<img src="https://github.com/liel20946/Reccomendo/assets/13507497/b71852c5-f4d0-43cf-923d-302f8b86cddf" alt="Screenshot_20200916-223152_Recomendo" width="200px">
+<img src="https://github.com/liel20946/Reccomendo/assets/13507497/701d0396-fe39-46ea-ac16-a1010167e063" alt="Screenshot_20200916-222646_Recomendo" width="200px">
+<img src="https://github.com/liel20946/Reccomendo/assets/13507497/15dfacc0-1c0a-4699-9a56-911ab6193b5d" alt="Screenshot_20200916-222553_Recomendo" width="200px">
+<img src="https://github.com/liel20946/Reccomendo/assets/13507497/e75f6dfa-d39f-40b4-b0ea-417220558e8d" alt="Screenshot_20200916-222546_Recomendo" width="200px">
+<img src="https://github.com/liel20946/Reccomendo/assets/13507497/a7466a55-ce77-45e1-86b0-37bea212ac2e" alt="Screenshot_20200916-222541_Recomendo" width="200px">
+<img src="https://github.com/liel20946/Reccomendo/assets/13507497/bad8abdf-1dc0-4fe3-b84b-3d7fef3c202a" alt="Screenshot_20200916-222533_Recomendo" width="200px">
+
 
 ### How It Works:
 
@@ -28,7 +41,7 @@ Recommendo is an intuitive app designed to make your TV show discovery experienc
   
 3. **Explore and Discover:** Dive into the world of TV entertainment as you explore the recommended shows, filtered by your preferences or browsing popular and trending options.
   
-4. **Enjoy Your Watching Experience:** Tap on any show to access detailed information, including links to watch and trailers, ensuring a seamless viewing experience.
+4. **Enjoy Your Watching Experience:** Tap on any show to access detailed information, ensuring a seamless viewing experience.
 
 ### Getting Started:
 
@@ -51,13 +64,3 @@ To get started with Recommendo, simply follow these steps:
 ### Contribution:
 
 Contributions to Recommendo are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request. Let's work together to make Recommendo even better!
-
-### License:
-
-This project is licensed under the [MIT License](LICENSE).
-
-### Contact:
-
-Have questions or feedback? Feel free to reach out to us at [contact@recommendo.com](mailto:contact@recommendo.com).
-
-Happy binge-watching with Recommendo!
